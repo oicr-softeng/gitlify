@@ -1,0 +1,42 @@
+{
+    "name": "@overture-stack/gitlify",
+    "version": "0.0.1",
+    "author": "Anders Richardsson",
+    "license": "Apache-2.0",
+    "description": "Trigger Netlify builds manually from your PR.",
+    "repository": "git@github.com:overture-stack/gitlify.git",
+    "bin": {
+        "gitlify": "./lib/cli.js"
+    },
+    "files": [
+        "es",
+        "lib",
+        "umd"
+    ],
+    "scripts": {
+        "build": "nwb build-web-module",
+        "clean": "nwb clean-module",
+        "prepublishOnly": "npm run build",
+        "start": "node lib/index.js",
+        "test": "nwb test",
+        "test:coverage": "nwb test --coverage",
+        "test:watch": "nwb test --server"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "dotenv": "^8.2.0"
+    },
+    "devDependencies": {
+        "nwb": "0.23.x"
+    },
+    "resolutions": {
+        "axios": "^0.19.2",
+        "braces": "^2.3.1",
+        "cryptiles": "^4.1.2",
+        "hoek": "^4.2.1",
+        "mem": "^4.0.0",
+        "serialize-javascript": "^2.1.1",
+        "tunnel-agent": "^0.6.0",
+        "webpack-dev-server": "^3.1.11"
+    }
+}

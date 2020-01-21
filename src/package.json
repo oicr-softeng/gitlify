@@ -1,0 +1,14 @@
+{
+  "name": "GitlifyCLI",
+  "version": "0.0.1",
+  "author": "Anders Richardsson",
+  "license": "Apache-2.0",
+  "description": "Trigger Netlify builds manually from your PR.",
+  "repository": "git@github.com:overture-stack/gitlify.git",
+  "bin": {
+    "gitlify": "./cli.js"
+  },
+  "scripts": {
+    "start": "./cli.js"
+  }
+}
