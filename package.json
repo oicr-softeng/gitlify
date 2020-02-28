@@ -1,6 +1,6 @@
 {
     "name": "@overture-stack/gitlify",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Anders Richardsson",
     "license": "Apache-2.0",
     "description": "Trigger Netlify builds manually from your PR.",
