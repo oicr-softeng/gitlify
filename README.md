@@ -16,3 +16,15 @@
 ## Introduction
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+## How to use
+
+### Authenticate
+
+Make a [new personal access token on Github](https://github.com/settings/tokens/new) with permission `read:user`, and add it to your .env file (see `.env.example`).
+
+`GITHUB_TOKEN=your_token_here`
+
+### Publish a branch to Netlify
+
+`gitlify your_branch_name`
