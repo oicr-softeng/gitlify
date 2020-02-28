@@ -29,12 +29,12 @@ const gitlifyCLI = (
             axios.post(`https://api.netlify.com/build_hooks/${webhookId
         }?trigger_branch=${branchName
         }&trigger_title=triggered+manually+by+${developer}+using+Gitlify${appMode}`)
-                .then(({
-                    data,
-                    status,
-                }) => console.log('deploy command sent', status, data))
-                .catch(error => console.log('something went wrong', error)))
-        .catch(() => console.log('user name not found:', developer))
+            .then(({
+                data,
+                status,
+            }) => console.log('deploy command sent', status, data))
+            .catch(error => console.log('something went wrong with Netlify', error)))
+        .catch(error => console.log('something went wrong with GitHub', error))
     : console.log(
         'Error: You need to give me a valid branch name, webhook url and username.',
         branchName,
